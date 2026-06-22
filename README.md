@@ -1,77 +1,133 @@
-# K-Means Clustering From Scratch
+# 🚀 K-Means Clustering From Scratch
 
-## Overview
+> A complete implementation of the K-Means Clustering algorithm from scratch using NumPy, with customer segmentation, centroid optimization, and interactive visualizations.
 
-This project demonstrates the implementation of the K-Means Clustering algorithm from scratch using NumPy. The model is trained on the Mall Customers dataset to discover customer segments based on demographic and spending behavior.
+---
 
-## Features
+## 📌 Project Highlights
 
-* Data Loading and Exploration
-* Data Preprocessing
-* Label Encoding
-* Feature Scaling
-* Elbow Method for Optimal K Selection
-* K-Means Algorithm Implemented from Scratch
-* Euclidean Distance Calculation
-* Centroid Initialization and Updates
-* Cluster Assignment
-* Convergence Detection
-* 2D Cluster Visualization
-* Interactive 3D Cluster Visualization using Plotly
+✨ Implemented K-Means without using Scikit-Learn's clustering model
 
-## Dataset
+✨ Random centroid initialization
+
+✨ Euclidean distance-based cluster assignment
+
+✨ Dynamic centroid updates
+
+✨ Convergence detection
+
+✨ Elbow Method for optimal K selection
+
+✨ 2D Cluster Visualization
+
+✨ Interactive 3D Cluster Visualization using Plotly
+
+---
+
+## 📊 Dataset
 
 **Mall Customers Dataset**
 
-Features used:
+The dataset contains customer demographic and spending information:
 
 * Gender
 * Age
 * Annual Income (k$)
 * Spending Score (1-100)
 
-## Tech Stack
+---
 
-* Python
-* NumPy
-* Pandas
-* Matplotlib
-* Plotly
-* Scikit-Learn
+## ⚙️ Workflow
 
-## Visualizations
+```text
+Data Loading
+     ↓
+Data Preprocessing
+     ↓
+Feature Scaling
+     ↓
+Elbow Method
+     ↓
+Initialize Centroids
+     ↓
+Assign Clusters
+     ↓
+Update Centroids
+     ↓
+Repeat Until Convergence
+     ↓
+Visualization
+```
+
+---
+
+## 🛠️ Tech Stack
+
+<p align="left">
+Python • NumPy • Pandas • Matplotlib • Plotly • Scikit-Learn
+</p>
+
+---
+
+## 📈 Visualizations
+
+### 🔹 Elbow Method
+
+Determine the optimal number of clusters using WCSS.
+
+### 🔹 Customer Segmentation
+
+Visualize customer groups discovered by K-Means.
+
+### 🔹 Cluster Centroids
+
+Analyze final centroid positions after convergence.
+
+### 🔹 Interactive 3D Clustering
+
+Explore customer segments in a fully interactive 3D space.
+
+---
+
+## 🎯 Results
+
+✅ Successfully implemented K-Means from scratch
+
+✅ Segmented customers into meaningful groups
+
+✅ Visualized clusters in both 2D and 3D
+
+✅ Demonstrated centroid-based partitioning
+
+✅ Built an end-to-end unsupervised learning project
+
+---
+
+## 📸 Project Preview
 
 ### Elbow Method
 
-Used to determine the optimal number of clusters.
+<img src="images/elbow_method.png" width="700">
 
 ### Customer Segmentation
 
-2D visualization of customer clusters based on spending behavior.
+<img src="images/clusters.png" width="700">
 
 ### Cluster Centroids
 
-Visualization of final centroid positions after convergence.
+<img src="images/centroids.png" width="700">
 
 ### Interactive 3D Visualization
 
-Interactive customer segmentation using:
+<img src="images/cluster_3d.png" width="700">
 
-* Age
-* Annual Income
-* Spending Score
+---
 
-## Results
+## 👨‍💻 Author
 
-* Successfully implemented K-Means without using Scikit-Learn's clustering model.
-* Performed customer segmentation using unsupervised learning.
-* Visualized clusters in both 2D and 3D.
-* Identified meaningful customer groups based on spending patterns.
-
-## Author
-
-Raj Kumar Gupta
+**Raj Kumar Gupta**
 
 B.Tech CSE (AI & ML)
-
 Amity University Jharkhand
+
+⭐ If you found this project useful, consider giving it a star.
