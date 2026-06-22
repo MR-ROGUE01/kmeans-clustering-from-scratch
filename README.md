@@ -1,26 +1,21 @@
 # 🚀 K-Means Clustering From Scratch
 
-> A complete implementation of the K-Means Clustering algorithm from scratch using NumPy, with customer segmentation, centroid optimization, and interactive visualizations.
+A complete implementation of the K-Means clustering algorithm using **NumPy**, built from scratch without relying on Scikit-Learn's KMeans class.
+
+The project performs customer segmentation on the Mall Customers dataset and includes data preprocessing, optimal cluster selection using the Elbow Method, centroid optimization, and interactive visualizations.
 
 ---
 
-## 📌 Project Highlights
+## ✨ Key Features
 
-✨ Implemented K-Means without using Scikit-Learn's clustering model
-
-✨ Random centroid initialization
-
-✨ Euclidean distance-based cluster assignment
-
-✨ Dynamic centroid updates
-
-✨ Convergence detection
-
-✨ Elbow Method for optimal K selection
-
-✨ 2D Cluster Visualization
-
-✨ Interactive 3D Cluster Visualization using Plotly
+* K-Means implemented completely from scratch
+* Random centroid initialization
+* Euclidean distance calculation
+* Cluster assignment and centroid updates
+* Convergence detection
+* Elbow Method for optimal cluster selection
+* 2D cluster visualization
+* Interactive 3D cluster visualization with Plotly
 
 ---
 
@@ -28,106 +23,89 @@
 
 **Mall Customers Dataset**
 
-The dataset contains customer demographic and spending information:
-
-* Gender
-* Age
-* Annual Income (k$)
-* Spending Score (1-100)
+| Feature                | Description                 |
+| ---------------------- | --------------------------- |
+| Gender                 | Customer Gender             |
+| Age                    | Customer Age                |
+| Annual Income (k$)     | Annual Income               |
+| Spending Score (1-100) | Customer Spending Behaviour |
 
 ---
 
-## ⚙️ Workflow
+## 🧠 Algorithm Workflow
 
-```text
-Data Loading
-     ↓
-Data Preprocessing
-     ↓
-Feature Scaling
-     ↓
-Elbow Method
-     ↓
-Initialize Centroids
-     ↓
-Assign Clusters
-     ↓
-Update Centroids
-     ↓
-Repeat Until Convergence
-     ↓
-Visualization
+```python
+1. Choose K clusters
+2. Initialize K centroids randomly
+3. Compute distance of every point from centroids
+4. Assign points to nearest centroid
+5. Update centroids using cluster means
+6. Repeat until centroids stop moving
 ```
+
+---
+
+## 📈 Results
+
+### Elbow Method
+
+Used to determine the optimal number of clusters.
+
+<p align="center">
+<img src="images/elbow_method.png" width="700">
+</p>
+
+### Customer Segmentation
+
+<p align="center">
+<img src="images/clusters.png" width="700">
+</p>
+
+### Clusters with Centroids
+
+<p align="center">
+<img src="images/centroids.png" width="700">
+</p>
+
+### Interactive 3D Visualization
+
+<p align="center">
+<img src="images/cluster_3d.png" width="700">
+</p>
 
 ---
 
 ## 🛠️ Tech Stack
 
 <p align="left">
-Python • NumPy • Pandas • Matplotlib • Plotly • Scikit-Learn
+<img src="https://skillicons.dev/icons?i=python" />
 </p>
 
----
+**Libraries Used**
 
-## 📈 Visualizations
-
-### 🔹 Elbow Method
-
-Determine the optimal number of clusters using WCSS.
-
-### 🔹 Customer Segmentation
-
-Visualize customer groups discovered by K-Means.
-
-### 🔹 Cluster Centroids
-
-Analyze final centroid positions after convergence.
-
-### 🔹 Interactive 3D Clustering
-
-Explore customer segments in a fully interactive 3D space.
+* NumPy
+* Pandas
+* Matplotlib
+* Plotly
+* Scikit-Learn
 
 ---
 
-## 🎯 Results
+## 🎯 Learning Outcomes
 
-✅ Successfully implemented K-Means from scratch
-
-✅ Segmented customers into meaningful groups
-
-✅ Visualized clusters in both 2D and 3D
-
-✅ Demonstrated centroid-based partitioning
-
-✅ Built an end-to-end unsupervised learning project
-
----
-
-## 📸 Project Preview
-
-### Elbow Method
-
-<img src="images/elbow_method.png" width="700">
-
-### Customer Segmentation
-
-<img src="images/clusters.png" width="700">
-
-### Cluster Centroids
-
-<img src="images/centroids.png" width="700">
-
-### Interactive 3D Visualization
-
-<img src="images/cluster_3d.png" width="700">
+* Understanding K-Means internals
+* Distance-based clustering
+* Feature scaling for clustering
+* Centroid optimization
+* Cluster visualization techniques
+* Practical unsupervised learning workflow
 
 ---
 
 ## 👨‍💻 Author
 
 **Raj Kumar Gupta**
-
 B.Tech CSE (AI & ML)
 Amity University Jharkhand
 
-⭐ If you found this project useful, consider giving it a star.
+⭐ Star this repository if you found it useful.
